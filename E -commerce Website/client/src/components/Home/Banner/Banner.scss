@@ -1,0 +1,54 @@
+@import "../../../css-config/mixins.scss";
+
+
+.banner-section {
+    width: 100%;
+    font-family: Inter;
+    margin-top: 10px;
+    @include md {
+        margin-top: 30px;
+    }
+    .banner-img {
+        max-width: 1500px;
+        margin: 0 auto;
+        background-image: url("../../../assets/img/banner1.jfif");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0px;
+        @include lg {
+            border-radius: 30px;
+        }
+        .banner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap:15px;
+            padding: 45px 0;
+            .main-text {
+                color: #EE1D1D;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: normal;
+            }
+            span {
+                color: #000;
+                font-size: 18px;
+            }
+            button {
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                padding: 13px 44px;
+                border-radius: 10px;
+                border: 0;
+                background: #33DD3A;
+                &:hover {
+                    background:#1dbd23; 
+                }
+            }
+        }
+        
+    }
+}

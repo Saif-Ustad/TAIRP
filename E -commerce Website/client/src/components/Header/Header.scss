@@ -1,0 +1,191 @@
+@import "../../css-config/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;900&family=Luckiest+Guy&display=swap');
+
+
+.main-heading {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 0 20px;
+
+    @include md {
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .heading-content {
+        display: flex;
+        max-width: 1500px;
+        height: 50px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        @include md {
+            height: 80px;
+        }
+
+        .left {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            span {
+                color: #000;
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+            }
+
+            .gender-toggle {
+                display: none;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #E8E8E8;
+                border-radius: 10px;
+                width: 240px;
+                height: 50px;
+
+                @include md {
+                    display: flex;
+                }
+
+                .Men {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: center;
+                    width: 110px;
+                    height: 40px;
+                    border-radius: 8px;
+                    font-family: Inter;
+                    cursor: pointer;
+                    &:hover {
+                        background: #33DD3A;
+                        color: #FFF;
+                    }
+                }
+
+                .Women {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: center;
+                    width: 110px;
+                    height: 40px;
+                    border-radius: 8px;
+                    font-family: Inter;
+                    cursor: pointer;
+                    &:hover {
+                        background: #33DD3A;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            .search-bar {
+                width: 427px;
+                height: 50px;
+                flex-shrink: 0;
+                position: relative;
+                display: none;
+
+                @include lg {
+                    display: block;
+                }
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    font-family: Inter;
+                    font-weight: 200;
+                    line-height: normal;
+                    font-size: 16px;
+                    padding: 16px;
+                    background-color: #E8E8E8;
+                    border-radius: 10px;
+                    border: 0;
+                    
+
+                }
+
+                .search-icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 18px;
+                    font-size: 28px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .header-icons {
+                display: flex;
+                gap: 15px;
+                position: relative;
+
+                svg {
+                    cursor: pointer;
+                    font-size: 28px;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                }
+
+                @include sm {
+                    gap: 30px;
+                }
+
+                .search-icon-sm {
+                    display: block;
+                    cursor: pointer;
+                    @include lg {
+                        display: none;
+                    }
+                }
+
+                .cart-count {
+                    min-width: 20px;
+                    text-align: center;
+                    background:#33DD3A;
+                    padding: 2.5px;
+                    position: absolute;
+                    top: -5px;
+                    right: -12px;
+                    font-size: 12px;
+                    line-height: 1;
+                    border-radius: 10px;
+                }
+                .fv-count {
+                    min-width: 20px;
+                    text-align: center;
+                    background:#33DD3A;
+                    padding: 2.5px;
+                    position: absolute;
+                    top: -5px;
+                    right: 35px;
+                    font-size: 12px;
+                    line-height: 1;
+                    border-radius: 10px;
+                    @include sm {
+                        right: 48px;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

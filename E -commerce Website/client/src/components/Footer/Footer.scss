@@ -1,0 +1,74 @@
+@import "../../css-config/mixins.scss";
+
+.footer-section {
+    font-family: Inter;
+    width:100%;
+    .footer-container {
+        background: #E8E8E8;
+        max-width: 1500px;
+        margin: 0 auto;
+        .footer-content {
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            @include md {
+                justify-content: space-between;
+                padding: 50px 40px;
+            }
+            .col {
+                max-width: 280px;
+                font-size: 16px;
+                font-style: normal;
+                .title {
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-weight: 200;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                ul {
+                    list-style-type: none;
+                    color: rgba(0, 0, 0, 0.5);
+                    align-items: center;
+                    li {      
+                        font-weight: 200;
+                        line-height: 25px;
+                        svg {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom-bar {
+    max-width: 1500px;
+    margin: 0px auto;
+    .bottom-bar-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 30px 20px;
+        @include md {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            padding: 30px 20px;
+        }
+        .text {
+            font-family: Inter;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../css-config/mixins.scss";
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 0 20px;
+    @include sm {
+        gap:30px;  
+        margin: 0; 
+    }
+    .category-card {
+        padding: 33px 27px;
+        border-radius: 10px;
+        background: #E8E8E8;
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+            background: #DEB9FC;
+            color:white;
+        }
+    }
+}

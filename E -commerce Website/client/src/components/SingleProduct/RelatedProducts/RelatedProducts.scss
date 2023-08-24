@@ -1,0 +1,13 @@
+@import "../../../css-config/mixins.scss";
+
+.other-p-img {
+    display: flex;
+    gap: 30px;
+    img {
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}

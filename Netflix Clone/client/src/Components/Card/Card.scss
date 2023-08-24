@@ -1,0 +1,57 @@
+
+.Card {
+    width: 230px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 0 0 auto;  
+    &:hover {
+        transform:translateY(-20px)
+    }
+    
+    .card-img {
+        img {
+            width: 100%;
+            height: 311px;
+            
+        }
+    }
+    .details {
+        .cart-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            .year {
+                color: #6D6868;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .icons {
+               display: flex;
+               gap: 15px;
+               align-items: center;
+               span {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    color: #FFC702;
+                    h6 {
+                        font-size: 16px;
+                    }
+               }
+               .heart-icon {
+                    fill: #6D6868;
+               }
+               .eye-icon {
+                    fill: #F30B0B;
+                    font-size: 18px;
+               }
+            }
+        }
+    }
+}

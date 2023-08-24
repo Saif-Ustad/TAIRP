@@ -1,0 +1,63 @@
+@import "../../../css-config/mixins.scss";
+
+.followersCard {
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .followers-list {
+        margin-top: 15px;
+        display:flex;
+        flex-direction: column;
+        gap:25px;
+        .follower {
+            display: flex;
+            justify-content: space-between;
+            .follower-info {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                img {
+                    width: 72px;
+                    height: 68px;
+                    border-radius: 50%;
+                }
+                .name-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap:5px;
+                    span:nth-of-type(1) {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    span:nth-of-type(2) {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .follow-btn {
+                button {
+                    padding: 8px 22px;
+                    border-radius: 10px;
+                    background: linear-gradient(122deg, #F3F820 0%, #E40202 100%);
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                
+            }
+        }
+    }
+    h5 {
+        text-align: center;
+        margin: 12px 0;
+        background: linear-gradient(176deg, #F3F820 15.16%, #E40202 77.89%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+}

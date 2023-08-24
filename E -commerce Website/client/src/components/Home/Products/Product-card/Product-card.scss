@@ -1,0 +1,46 @@
+@import "../../../../css-config/mixins.scss";
+
+
+.card {
+    position: relative;
+    .product-card {
+        img {
+            width: 170px;
+            height: 210px;
+            border-radius: 10px;
+            @include sm {
+                width: 215px;
+                height: 260px;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+    .like-btn {
+        background-color: white;
+        border-radius: 50%;
+        width:35px;
+        height: 35px;
+        text-align: center;
+        padding-top: 6px;
+        position: absolute;
+        top:12px;
+        right: 12px;
+        svg {
+            font-size: 25px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        
+      
+    }
+    .active {
+        svg {
+            color:red;
+        }
+    }
+}

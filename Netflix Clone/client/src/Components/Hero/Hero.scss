@@ -1,0 +1,128 @@
+
+.home-page {
+    height: 100vh;
+   
+    color: #fff;
+    .hero-section {
+        width: 100%;
+        .container {
+            max-width: 1600px;
+            height: 90vh;
+            margin: 0 auto;
+            position: relative;
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                position: relative;
+                position: absolute;
+                left: 5%;
+                top: 25%;
+                h3 {
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                .rating {
+                    display: flex;
+                    gap:10px;
+                    align-items: center;
+                    h6 {
+                        font-weight: 500;
+                        font-size: 24px;
+                        margin-right: 10px;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                    svg {
+                        font-size: 24px;
+                        fill: #FDD835;
+                    }
+                }
+                h1 {
+                    font-size: 66px;
+                    font-weight: 800;
+                    letter-spacing: 2.64px;
+                    padding: 20px 0;
+                }
+                p {
+                    font-size: 22px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    width: 800px;
+                }
+                .btns {
+                    display: flex;
+                    gap:30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    .btn {
+                        width: 166px;
+                        height: 52px;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: yellow;
+                        border-radius: 40px;
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                    .red-btn {
+                        background: #F30B0B;
+                        box-shadow: 2px 8px 35px 0px rgba(247, 0, 0, 0.90);
+                       
+                    }
+                    .black-btn {
+                        background: #000;
+                    }
+                }
+            }
+            
+        }
+        .slider {
+            display: flex;
+            gap: 40px;
+            position: absolute;
+            left: 50%;
+            top: 95%;
+            transform: translate(-50%);
+            div {
+                width: 130px;
+                height: 10px;
+                background: #7F7F7F;
+                cursor: pointer;
+               
+            }
+            .active {
+                background: #fff;
+            }
+        }
+        
+
+    }
+}
+
+.slide-1 {
+    background: url("../../Assets/images/Hero-section.jfif"), lightgray 50% ;
+    background-size: cover;
+    box-shadow: 643px 213px 150px 13px rgba(0, 0, 0, 0.65) inset;
+    transition: background-position 0.3s ease-in-out; // Add transition effect
+}
+
+.slide-2 {
+    background: url("../../Assets/images/hero-section2.jpg"), lightgray 50% ;
+    background-size: cover;
+    box-shadow: 643px 213px 150px 13px rgba(0, 0, 0, 0.65) inset;
+    transition: background-position 0.3s ease-in-out; // Add transition effect
+}
+
+.slide-3 {
+    background: url("../../Assets/images/banner-img.jfif"), lightgray 50% ;
+    background-size: cover;
+    box-shadow: 643px 213px 150px 13px rgba(0, 0, 0, 0.65) inset;
+    transition: background-position 0.3s ease-in-out; // Add transition effect
+}

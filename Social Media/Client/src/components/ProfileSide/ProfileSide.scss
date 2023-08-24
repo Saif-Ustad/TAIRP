@@ -1,0 +1,7 @@
+@import "../../css-config/mixins.scss";
+
+.profile-side {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}

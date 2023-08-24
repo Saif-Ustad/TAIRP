@@ -1,0 +1,173 @@
+@import "../../css-config/mixins.scss";
+
+.AuthenticationPage {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xl {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        span:nth-of-type(1) {
+            font-size: 80px;
+            font-weight: 600;
+            background: linear-gradient(179deg, #F3F820 10.06%, rgba(228, 2, 2, 0.95) 87.50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 30px 0;
+        }
+
+        span:nth-of-type(2) {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+
+    .logIn {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 42px;
+        max-width: 562px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 22px;
+            border-radius: 20px;
+            background: #EAEAEA;
+            font-size: 18px;
+            border: none;
+
+            &::placeholder {
+                font-weight: 300;
+            }
+        }
+
+        h5 {
+            color: #042185;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .logIn-btn {
+            button {
+                padding: 15px 70px;
+                border-radius: 20px;
+                background: linear-gradient(134deg, #F3F820 5.23%, #E40202 81.94%);
+                border: none;
+                font-size: 28px;
+                font-weight: 700;
+                color: #fff;
+                cursor: pointer;
+                &:disabled {
+                    background-color: silver;
+                    pointer-events: none;
+                }
+            }
+            
+
+        }
+    }
+
+    .signIn {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 42px;
+        max-width: 680px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .SignIn-Details {
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            input {
+                padding: 22px;
+                border-radius: 20px;
+                background: #EAEAEA;
+                font-size: 18px;
+                border: none;
+                &::placeholder {
+                    font-weight: 300;
+                }
+            }
+            .name {
+                display: flex;
+                justify-content: space-between;
+                gap:20px;
+                input {
+                    text-transform: capitalize;
+                }
+                
+            }
+            .password {
+                display: flex;
+                justify-content: space-between;
+                gap:20px;
+                
+            }
+            .username {
+                input {
+                    text-transform:lowercase;
+                }
+            }
+        }
+        h5 {
+            color: #042185;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .SignIn-btn {
+            button {
+                padding: 15px 70px;
+                border-radius: 20px;
+                background: linear-gradient(134deg, #F3F820 5.23%, #E40202 81.94%);
+                border: none;
+                font-size: 28px;
+                font-weight: 700;
+                color: #fff;
+                cursor: pointer;
+                &:disabled {
+                    background-color: silver;
+                    pointer-events: none;
+                }
+            }
+
+        }
+    }
+
+}

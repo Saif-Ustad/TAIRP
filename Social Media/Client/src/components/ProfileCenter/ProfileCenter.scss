@@ -1,0 +1,18 @@
+
+.profile-center {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    gap:24px;
+    .profile-img {
+        height: 200px;
+        img:nth-of-type(2) {
+            width: 180px;
+            height: 180px;
+
+        
+        }
+    }
+   
+}

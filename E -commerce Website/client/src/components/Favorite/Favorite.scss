@@ -1,0 +1,116 @@
+@import "../../css-config/mixins.scss";
+
+
+.favorite-section {
+    position: fixed;
+    font-family: Inter;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background: #E8E8E8;
+
+    @include md {
+        width: 500px;
+    }
+
+    .favorite-content {
+        padding: 15px 15px;
+
+        @include md {
+            padding: 35px 35px;
+        }
+
+        .favorite-heading {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-weight: 500;
+            }
+
+            .close-btn {
+                font-size: 18px;
+                font-weight: 300;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
+        .first_hr {
+            margin-bottom: 30px;
+        }
+
+        .favorite-items-section {
+            height: calc(100vh - 126px);
+            .Empty_favorite_condition {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .empty-favorite-icon {
+                    font-size: 150px;
+                    color: white;
+                    margin-top: 70px;
+                    margin-bottom: 30px;
+
+                    @include md {
+                        margin-top: 100px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .text {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 25px;
+
+                    @include md {
+                        margin-bottom: 40px;
+                        font-size: 24px;
+                    }
+                }
+
+                button {
+                    background: #33DD3A;
+                    padding: 14px 22px;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #1dbd23;
+                    }
+
+                    @include md {
+                        font-size: 24px;
+                        padding: 18px 22px;
+                    }
+                }
+            }
+            .Non-empty-favorite-condition {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100vh - 126px);
+                .each-single-favorite-item-grp {
+                    .favorite_items {
+                        margin-bottom: 15px;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}

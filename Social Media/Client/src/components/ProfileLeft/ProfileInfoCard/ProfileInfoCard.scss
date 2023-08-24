@@ -1,0 +1,44 @@
+
+.ProfileInfoCard {
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    .InfoHead {
+        display: flex;
+        justify-content: space-between;
+        h4{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        svg {
+            cursor: pointer;
+        }
+    }
+    .infoDetails {
+        display: flex;
+        flex-direction: column;
+        gap:18px;
+        .info {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    .logout-btn {
+        margin-top: 80px;
+        button {
+            padding: 8px 22px;
+            float: right;
+            border-radius: 10px;
+            background: linear-gradient(122deg, #F3F820 0%, #E40202 100%);
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            
+        }
+    }
+    
+}

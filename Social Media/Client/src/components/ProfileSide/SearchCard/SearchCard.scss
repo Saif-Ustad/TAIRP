@@ -1,0 +1,42 @@
+@import "../../../css-config/mixins.scss";
+
+.searchCard {
+    display: flex;
+    justify-content: center;
+    gap:12px;
+    align-items: center;
+    .logo {
+        width: 40px;
+        height: 30px;
+    }
+    .searchInput {
+        border-radius: 10px;
+        background: #FFF;
+        width: 278px;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            padding: 13px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            color: #000;
+            font-size: 14px;
+            font-weight: 200;
+
+        }
+        span {
+            background: linear-gradient(124deg, #F3F820 0%, rgba(228, 2, 2, 0.98) 100%);
+            padding: 7px 11px 0px 13px;
+            margin-right: 5px;
+            border-radius: 10px;
+            color: #fff;
+            svg {
+                width: 25px;
+                height: 21px;  
+            }
+        }
+    }
+}

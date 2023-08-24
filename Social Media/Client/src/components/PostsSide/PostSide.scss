@@ -1,0 +1,40 @@
+@import "../../css-config/mixins.scss";
+
+.PostSide {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    gap:24px;
+    
+    .post {
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        img {
+            width: 100%;
+            max-height: 600px;
+            border-radius: 20px;
+        }
+        .post-icons {
+            display: flex;
+            gap:35px;
+            font-size: 25px;
+            svg {
+                cursor: pointer;
+            }
+            
+        }
+        h4 {
+            font-size: 13px;
+            font-weight: 200;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
